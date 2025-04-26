@@ -1,16 +1,74 @@
-# budgets_app
+💰 Budgeto – Budget Management App (Flutter + GetX)
 
-A new Flutter project.
+Budgeto ek simple aur powerful budget management app hai jo users ko apne daily expenses track karne, budget set karne aur category-wise spending dekhne ki sahulat deta hai. Ye app Flutter aur GetX (MVVM architecture) ka use karti hai for fast and reactive performance.
 
-## Getting Started
+📱 Features
 
-This project is a starting point for a Flutter application.
+✅ Expense Management
 
-A few resources to get you started if this is your first Flutter project:
+Add, edit, delete daily expenses
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Assign category, amount, and date to each expense
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Real-time updates with GetX Obx and GetBuilder
+
+🏦 Budget Planning
+
+Set monthly budget goals
+
+Alerts on exceeding the budget
+
+Track remaining and used budget
+
+📊 Smart Dashboard
+
+Summary of total expenses, remaining budget, and balance
+
+Pie chart / bar chart view for category-wise expenses
+
+🔍 Filter & Search
+
+Filter expenses by category, date range, or amount
+
+Dynamic UI updates using GetX state management
+
+📂 Category Control
+
+Manage expense categories (add/edit/delete)
+
+🌙 Dark & Light Mode
+
+Toggle between light and dark theme
+
+Theme state managed with GetX ThemeController
+
+⚙️ Architecture
+
+This app uses MVVM architecture with GetX:
+
+lib/
+│
+├── models/         # Data models (Expense, Category, Budget)
+├── views/          # UI screens
+├── controllers/    # ViewModels with GetX logic
+├── services/       # Data handling (e.g., local DB)
+├── bindings/       # Dependency injections
+└── main.dart       # Entry point
+
+💾 Local Storage
+
+Expenses and budget data are stored using Hive or SharedPreferences (based on your setup).
+
+Data persists even after app restarts.
+
+🛠️ Tech Stack
+
+Flutter 💙
+
+GetX for State Management 🚀
+
+MVVM Architecture 🧠
+
+Hive / SharedPreferences (for local storage)
+
+Charts package (for data visualization)

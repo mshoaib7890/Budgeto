@@ -43,9 +43,7 @@ Toggle between light and dark theme
 Theme state managed with GetX ThemeController
 
 ⚙️ Architecture
-
 This app uses MVVM architecture with GetX:
-
 lib/
 │
 ├── models/         # Data models (Expense, Category, Budget)

@@ -1,72 +1,64 @@
 💰 Budgeto – Budget Management App (Flutter + GetX)
+Budgeto is a simple yet powerful budget management app that helps users efficiently track daily expenses, set monthly budgets, and analyze spending through visual insights. Built with Flutter and GetX using the MVVM architecture, the app ensures fast performance and a reactive user experience.
 
-Budgeto ek simple aur powerful budget management app hai jo users ko apne daily expenses track karne, budget set karne aur category-wise spending dekhne ki sahulat deta hai. Ye app Flutter aur GetX (MVVM architecture) ka use karti hai for fast and reactive performance.
-
-📱 Features
-
+📱 Key Features
 ✅ Expense Management
+Add, edit, and delete daily expenses.
 
-Add, edit, delete daily expenses
+Assign categories, amounts, and dates to each expense.
 
-Assign category, amount, and date to each expense
-
-Real-time updates with GetX Obx and GetBuilder
+Real-time UI updates using GetX (Obx and GetBuilder).
 
 🏦 Budget Planning
+Set and manage monthly budget goals.
 
-Set monthly budget goals
+Get alerts when budget limits are exceeded.
 
-Alerts on exceeding the budget
-
-Track remaining and used budget
+View remaining and used budget at a glance.
 
 📊 Smart Dashboard
+Summary of total spending, remaining budget, and available balance.
 
-Summary of total expenses, remaining budget, and balance
-
-Pie chart / bar chart view for category-wise expenses
+Interactive pie and bar charts for category-wise analysis.
 
 🔍 Filter & Search
+Filter expenses by category, date range, or amount.
 
-Filter expenses by category, date range, or amount
+Instant results with dynamic UI updates using GetX state management.
 
-Dynamic UI updates using GetX state management
+📂 Category Management
+Add, edit, or delete custom expense categories.
 
-📂 Category Control
+🌙 Light & Dark Mode
+Seamless theme switching (light/dark).
 
-Manage expense categories (add/edit/delete)
-
-🌙 Dark & Light Mode
-
-Toggle between light and dark theme
-
-Theme state managed with GetX ThemeController
+Theme state controlled via ThemeController using GetX.
 
 ⚙️ Architecture
-This app uses MVVM architecture with GetX:
+Follows MVVM Pattern with GetX
+
+bash
+Copy
+Edit
 lib/
-│
 ├── models/         # Data models (Expense, Category, Budget)
 ├── views/          # UI screens
-├── controllers/    # ViewModels with GetX logic
-├── services/       # Data handling (e.g., local DB)
-├── bindings/       # Dependency injections
-└── main.dart       # Entry point
-
+├── controllers/    # ViewModels (GetX controllers)
+├── services/       # Local data handling (Hive/SharedPreferences)
+├── bindings/       # Dependency injection
+└── main.dart       # App entry point
 💾 Local Storage
+Data stored locally using Hive or SharedPreferences.
 
-Expenses and budget data are stored using Hive or SharedPreferences (based on your setup).
-
-Data persists even after app restarts.
+All data persists across app restarts.
 
 🛠️ Tech Stack
-
 Flutter 💙
 
 GetX for State Management 🚀
 
 MVVM Architecture 🧠
 
-Hive / SharedPreferences (for local storage)
+Hive / SharedPreferences for local persistence
 
-Charts package (for data visualization)
+fl_chart or similar package for data visualization 📊
